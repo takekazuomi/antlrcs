@@ -38,6 +38,10 @@
     <CodeAnalysisRuleSet>..\Antlr3.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=9c14523ec7a44f10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Runtime\Antlr3.Runtime\bin\net20\Debug\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
@@ -134,12 +138,6 @@
     <Compile Include="Compiler\TemplateParser.g3.cs">
       <DependentUpon>TemplateParser.g3</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Runtime\Antlr3.Runtime\Antlr3.Runtime.net20.csproj">
-      <Project>{8FDC0A87-9005-4D5A-AB75-E55CEB575559}</Project>
-      <Name>Antlr3.Runtime.net20</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
